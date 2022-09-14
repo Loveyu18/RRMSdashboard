@@ -14,7 +14,7 @@
 				'我知道了',
 			confirmButtonAriaLabel: '我知道了',
 		})
-// sweetalert2 
+// end::sweetalert2 
 
 // begin::地方 - 業者現況分析
     var caseOptions1 = {
