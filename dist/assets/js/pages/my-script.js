@@ -17,18 +17,22 @@
 // end::sweetalert2
 
 // begin::ajax test
-$(document).ready(function () {
-  $.ajax({
-    method: "GET",
-    url: "https://randomuser.me/api/",
-    // 有回傳資料才需要用data
-    // data: 
-  }).done(function (msg) {
-    console.log("msg", msg);
-    // console.log("email", msg.results[0].email);
-    let email = msg.results[0].email;
-   // 把email送到目的地
-    $('#ajaxTest').append(email);
+
+fetch("./assets/data/totalFactoryData.json")
+  .then(function (res) {
+    return res.json();
+  })
+  .then(function (totalFactoryData) {
+    let getTotalFactoryData = document.querySelector("#getTotalFactoryData");
+    // for 迴圈分別印出物件
+    for (let i = 0; i < totalFactoryData.length; i++) {
+      let totalFactoryDataArray = totalFactoryData[i];
+      getTotalFactoryData.innerHTML +=
+        "<div>" +
+        totalFactoryDataArray.industryResult.totalQuantity +
+        "," +
+        totalFactoryDataArray.industryResult +
+        "</div>";
+    }
   });
-});
 // end::ajax test
