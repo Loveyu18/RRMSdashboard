@@ -18,21 +18,5 @@
 
 // begin::ajax test
 
-fetch("./assets/data/totalFactoryData.json")
-  .then(function (res) {
-    return res.json();
-  })
-  .then(function (totalFactoryData) {
-    let getTotalFactoryData = document.querySelector("#getTotalFactoryData");
-    // for 迴圈分別印出物件
-    for (let i = 0; i < totalFactoryData.length; i++) {
-      let totalFactoryDataArray = totalFactoryData[i];
-      getTotalFactoryData.innerHTML +=
-        "<div>" +
-        totalFactoryDataArray.industryResult.totalQuantity +
-        "," +
-        totalFactoryDataArray.industryResult +
-        "</div>";
-    }
-  });
+
 // end::ajax test
