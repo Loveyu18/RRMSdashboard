@@ -93,8 +93,8 @@ var subsidyChartOptions1 = {
   ],
   chart: {
     type: "bar",
-    height: 320,
-    width: 500,
+    // height: 320,
+    // width: 500,
   },
   grid: {
     show: false,
@@ -270,8 +270,8 @@ var subsidyChartOptions2 = {
   ],
   chart: {
     type: "bar",
-    height: 320,
-    width: 500,
+    // height: 320,
+    // width: 500,
   },
   grid: {
     show: false,
@@ -2173,3 +2173,5 @@ if (typeof module !== "undefined") {
 jQuery(document).ready(function () {
   KTWidgets.init();
 });
+
+
