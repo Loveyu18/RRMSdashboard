@@ -1,8 +1,7 @@
 {
     "localRegistry": [
-        {
-            "total": "8345",
-            "recycle": "99",
+        {           
+            "recycle": "211",
             "dealwith": "435"    
         }
     ],

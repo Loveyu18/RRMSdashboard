@@ -5,7 +5,8 @@
             "id":"01",
             "icon":"icon路徑",
             "company":"善本企業有限公司",
-            "number": "12686505",
+            "category":"受補貼機構 處理業",
+            "number": "15428745",
             "address":"高雄市大社區中山路9號",
             "county":"高雄市"
             
@@ -14,6 +15,7 @@
             "id":"02",
             "icon":"icon路徑",
             "company":"善本企業有限公司",
+            "category":"受補貼機構 處理業",
             "number": "12686505",
             "address":"高雄市大社區中山路9號",
             "county":"高雄市"
@@ -23,7 +25,8 @@
             "id":"03",
 	        "icon":"icon路徑",
             "company":"善本企業有限公司",
-            "number": "12686505",
+            "category":"受補貼機構 處理業",
+            "number": "32654111",
             "address":"高雄市大社區中山路9號",
             "county":"高雄市"
             
@@ -32,7 +35,8 @@
             "id":"04",
 	        "icon":"icon路徑",
             "company":"善本企業有限公司",
-            "number": "12686505",
+            "category":"受補貼機構 處理業",
+            "number": "9855555",
             "address":"高雄市大社區中山路9號",
             "county":"高雄市"
             

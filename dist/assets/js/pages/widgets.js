@@ -93,8 +93,6 @@ var subsidyChartOptions1 = {
   ],
   chart: {
     type: "bar",
-    // height: 320,
-    // width: 500,
   },
   grid: {
     show: false,
