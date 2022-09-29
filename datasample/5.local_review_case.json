@@ -1,37 +1,27 @@
-
 {
-    "localPendingRecycle": [
+    "localPending": [
         {
-            "new": "19",
-            "change": "21",
-            "extend": "10",
-            "review": "16",
-            "totalCounts": "50"
+            "recycleNew": "1",
+            "recycleChange": "10",
+            "recycleExtend": "11",
+            "recycleReview": "15",
+            "dealWithNew": "1",
+            "dealWithChange": "1",
+            "dealWithExtend": "10",
+            "dealWithReview": "15"
         }
     ],
-    "localPendingDealWith": [
+    
+    "localUntrial": [
         {
-            "new": "1",
-            "change": "1",
-            "extend": "1",
-            "review": "3",
-            "totalCounts": "6"
-        }
-    ],
-    "localUntrialRecycle": [
-        {
-            "overdue": "18",
-            "overdue7": "18",
-            "overdue14": "25",
-            "overdue30": "40"        
-        }
-    ],
-    "localUntrialDealWith": [
-        {
-            "popularAuthors": "83",
-            "newUsers": "47",
-            "topAuthors": "65",
-            "activeCustomers": "71"
+            "recycleOverdue": "18",
+            "recycleOverdue7": "18",
+            "recycleOverdue14": "25",
+            "recycleOverdue30": "40" ,
+            "dealWithOverdue": "83",
+            "dealWithOverdue7": "47",
+            "dealWithOverdue14": "65",
+            "dealWithOverdue30": "71"      
         }
     ],
     "status":"success"

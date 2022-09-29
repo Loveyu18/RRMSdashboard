@@ -1,39 +1,30 @@
-
 {
-    "subsidizedPendingRecycle": [
+    "subsidizedPending": [
         {
-            "new": "1",
-            "change": "10",
-            "extend": "11",
-            "review": "15",
-            "totalCounts": "20"
+            "recycleNew": "22",
+            "recycleChange": "10",
+            "recycleExtend": "18",
+            "recycleReview": "5",
+            "dealWithNew": "12",
+            "dealWithChange": "10",
+            "dealWithExtend": "18",
+            "dealWithReview": "19"
+
         }
     ],
-    "subsidizedPendingDealWith": [
+    "subsidizedUntrial": [
         {
-            "new": "1",
-            "change": "1",
-            "extend": "10",
-            "review": "15",
-            "totalCounts": "40"
+            "recycleOverdue": "155",
+            "recycleOverdue7": "10",
+            "recycleOverdue14": "28",
+            "recycleOverdue30": "15" ,
+            "dealWithOverdue": "13",
+            "dealWithOverdue7": "04",
+            "dealWithOverdue14": "22",
+            "dealWithOverdue30": "11"     
         }
     ],
-    "subsidizedUntrialRecycle": [
-        {
-            "overdue": "18",
-            "7overdue": "18",
-            "14overdue": "25",
-            "30overdue": "40"    
-        }
-    ],
-    "subsidizedUntrialDealWith": [
-        {
-            "popularAuthors": "83",
-            "newUsers": "47",
-            "topAuthors": "65",
-            "activeCustomers": "71"
-        }
-    ],
+
     "status":"success"
    
 

@@ -146,7 +146,3 @@ function createDomElement(localTotal,elName) {
   Quantity.innerHTML = domElements
 
 }
-
-
-
-

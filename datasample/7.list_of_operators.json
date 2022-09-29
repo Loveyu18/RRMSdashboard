@@ -1,9 +1,7 @@
-
 {
     "data": [
         {
             "id":"01",
-            "icon":"icon路徑",
             "company":"善本企業有限公司",
             "category":"受補貼機構 處理業",
             "number": "15428745",
@@ -13,7 +11,6 @@
         },
         {
             "id":"02",
-            "icon":"icon路徑",
             "company":"善本企業有限公司",
             "category":"受補貼機構 處理業",
             "number": "12686505",
@@ -23,7 +20,6 @@
         },
         {
             "id":"03",
-	        "icon":"icon路徑",
             "company":"善本企業有限公司",
             "category":"受補貼機構 處理業",
             "number": "32654111",
@@ -33,7 +29,6 @@
         },
         {
             "id":"04",
-	        "icon":"icon路徑",
             "company":"善本企業有限公司",
             "category":"受補貼機構 處理業",
             "number": "9855555",
@@ -46,7 +41,6 @@
        
     ],
 
-    "total":"",
     "status":"success"
    
 

@@ -15,7 +15,7 @@ $.ajax({
 
   function createDomElement(operators) {
     const domElements = operators
-    .map((item) => {
+    .map((item, index) => {
         return `
       
         <div class="table-responsive">
@@ -34,9 +34,7 @@ $.ajax({
 					<tr>
 						<td class="py-5 pl-0">
 							<div class="symbol symbol-45 symbol-light mr-2">
-								<span class="symbol-label">
-									<img src="assets/media/svg/misc/003-puzzle.svg"  class="h-50 align-self-center" alt="">
-								</span>
+							${index + 1}
 							</div>
 						</td>
 						<td class="pl-0">
