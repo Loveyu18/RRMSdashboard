@@ -1,3 +1,4 @@
+
 $.ajax({
   type: 'GET',
   url: '../datasample/1.system_bulletin.json',
@@ -32,6 +33,7 @@ function createDomElement(charge, elementName) {
   console.log(elementName)
   const domElements = charge
   .map((item, index) => {
+
     return `
     <tr>
         <th scope="row">${index + 1}</th>
@@ -49,6 +51,7 @@ function createDomElement(charge, elementName) {
     </tr>
   `
   })
+  
   .join('')
 
   const system_bulletin = document.querySelector(`.${elementName}`)

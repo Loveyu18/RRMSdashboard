@@ -259,6 +259,7 @@ var caseChart2 = new ApexCharts(
 );
 caseChart2.render();
 // end::caseChart1 Scripts
+
 // begin::subsidyChart2 Scripts
 var subsidyChartOptions2 = {
   series: [
@@ -268,8 +269,6 @@ var subsidyChartOptions2 = {
   ],
   chart: {
     type: "bar",
-    // height: 320,
-    // width: 500,
   },
   grid: {
     show: false,
