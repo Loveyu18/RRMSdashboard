@@ -13,28 +13,14 @@ $.ajax({
   },
 })
 
-$.ajax({
-  type: 'GET',
-  url: '../datasample/4-1.subsidized_operator_status.json',
-  dataType: 'json',
-  async: false ,
-  success: function (response) {
-    const localTotal= []
-    localTotal.push(...response.subsidizedRegistry)
-    createDomElement(localTotal,'subsidized_operator')
-  },
-  error: function (thrownError) {
-    console.log(thrownError)
-  },
-})
 
 function createDomElement(localTotal,elName) {
   console.log(elName)
   const domElements = localTotal
   .map((item) => {
-    var i=item.recycle;  
-    var j=item.dealwith;  
-    var k = Number(i) + Number(j); 
+    let i=item.recycle;  
+    let j=item.dealwith;  
+    let k = Number(i) + Number(j); 
       return `
 
       <!--begin::Chart-->

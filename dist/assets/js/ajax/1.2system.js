@@ -7,7 +7,7 @@ $.ajax({
   success: function (response) {
   const charge = []
   charge.push(...response.data)
-  createDomElement(charge, 'system_bulletin')
+  createDomElement(charge, 'system_bulletin',4)
   },
   error: function (thrownError) {
   console.log(thrownError)
@@ -22,18 +22,21 @@ $.ajax({
   success: function (response) {
   const charge = []
   charge.push(...response.data)
-  createDomElement(charge, 'message_announcement')
+  createDomElement(charge, 'message_announcement',4)
   },
   error: function (thrownError) {
   console.log(thrownError)
   },
 })
 
-function createDomElement(charge, elementName) {
+function createDomElement(charge, elementName, limit=0) {
   console.log(elementName)
+  if(limit>0){
+    charge = charge.filter((item,index) => index < limit)
+  }
   const domElements = charge
   .map((item, index) => {
-
+   
     return `
     <tr>
         <th scope="row">${index + 1}</th>
@@ -58,5 +61,6 @@ function createDomElement(charge, elementName) {
   console.log(system_bulletin)
   system_bulletin.innerHTML = domElements
 
+  
  }
 

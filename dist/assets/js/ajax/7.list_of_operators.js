@@ -59,5 +59,6 @@ $.ajax({
       .join('')
 
     const list_of_operators = document.querySelector('.list_of_operators')
+	$('.list_of_operators_count').text(' 共 '+ operators.length +' 家 ')
     list_of_operators.innerHTML = domElements
   }
