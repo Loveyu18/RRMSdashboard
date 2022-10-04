@@ -47,7 +47,7 @@ function createDomElement(charge, elementName, limit=0) {
           </td>
           <td class="text-left">${item.content}</td>
           <td>
-            <span class="label label-inline label-light-primary font-weight-bold">${
+            <span class="label label-inline label-light-primary font-weight-bold author">${
       item.author
     }</span>
           </td>
@@ -61,6 +61,17 @@ function createDomElement(charge, elementName, limit=0) {
   console.log(system_bulletin)
   system_bulletin.innerHTML = domElements
 
+
+  $(function(){
+    var len = 30; // 超過50個字以"..."取代
+    $(".text-left").each(function(i){
+        if($(this).text().length>len){
+            $(this).attr("title",$(this).text());
+            var text=$(this).text().substring(0,len-1)+"...more";
+            $(this).text(text);
+        }
+    });
+});
   
  }
 

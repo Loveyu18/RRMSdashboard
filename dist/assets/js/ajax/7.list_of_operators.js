@@ -62,3 +62,5 @@ $.ajax({
 	$('.list_of_operators_count').text(' 共 '+ operators.length +' 家 ')
     list_of_operators.innerHTML = domElements
   }
+
+ 
