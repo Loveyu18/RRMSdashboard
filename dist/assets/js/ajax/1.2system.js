@@ -63,7 +63,7 @@ function createDomElement(charge, elementName, limit=0) {
 
 
   $(function(){
-    var len = 30; // 超過50個字以"..."取代
+    var len = 30; 
     $(".text-left").each(function(i){
         if($(this).text().length>len){
             $(this).attr("title",$(this).text());

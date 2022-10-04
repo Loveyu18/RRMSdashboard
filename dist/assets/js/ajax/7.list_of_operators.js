@@ -63,4 +63,3 @@ $.ajax({
     list_of_operators.innerHTML = domElements
   }
 
- 
