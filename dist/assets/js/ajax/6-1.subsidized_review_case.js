@@ -16,15 +16,15 @@ $.ajax({
   function createDomElement(operators) {
     const domElements = operators
     .map((item) => {
-        var a=item.recycleNew;  
-        var b=item.recycleChange;  
-        var c=item.recycleExtend;  
-        var d=item.recycleReview;  
-        var e=item.dealWithNew;  
-        var f=item.dealWithChange;  
-        var g=item.dealWithExtend;  
-        var h=item.dealWithReview;  
-        var k = Number(a) + Number(b) + Number(c) + Number(d) + Number(e) + Number(f) + Number(g) + Number(h); 
+        let a=item.recycleNew;  
+        let b=item.recycleChange;  
+        let c=item.recycleExtend;  
+        let d=item.recycleReview;  
+        let e=item.dealWithNew;  
+        let f=item.dealWithChange;  
+        let g=item.dealWithExtend;  
+        let h=item.dealWithReview;  
+        let k = Number(a) + Number(b) + Number(c) + Number(d) + Number(e) + Number(f) + Number(g) + Number(h); 
         return `
         <!--begin::Header-->
         <div class="card-header border-0 pt-6">

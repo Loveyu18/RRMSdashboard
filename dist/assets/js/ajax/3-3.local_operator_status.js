@@ -227,10 +227,6 @@ var subsidyChartOptions2 = {
     subsidyChart2.updateSeries(chart_data2);
   });
 
-  // var url = '../datasample/4-2.subsidized_operator_status.json';
-  // $.getJSON(url, function (response) {
-  //   subsidyChart2.updateSeries(response);
-  // });
 // end::subsidyChart2 Scripts
 
 // begin::caseChart2 Scripts
