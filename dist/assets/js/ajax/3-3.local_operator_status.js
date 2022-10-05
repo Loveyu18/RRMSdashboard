@@ -19,6 +19,7 @@ var subsidyChartOptions1 = {
         },
       },
     },
+
     colors: [
       "#33b2df",
       "#546E7A",
@@ -34,6 +35,7 @@ var subsidyChartOptions1 = {
       textAnchor: "start",
       style: {
         colors: ["#fff"],
+        fontSize: "16px",
       },
       formatter: function (val, opt) {
         return opt.w.globals.labels[opt.dataPointIndex] + " " + val;
@@ -43,6 +45,7 @@ var subsidyChartOptions1 = {
     //     enabled: true,
     //   },
     },
+    
     stroke: {
       width: 1,
       colors: ["#fff"],
@@ -51,6 +54,8 @@ var subsidyChartOptions1 = {
       labels: {
         show: false,
       },
+      
+     
     },
     tooltip: {
       theme: "dark",

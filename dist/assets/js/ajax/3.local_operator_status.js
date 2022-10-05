@@ -6,7 +6,7 @@ $.ajax({
   success: function (response) {
     const localTotal= []
     localTotal.push(...response.localRegistry)
-    createDomElement(localTotal,'local_operator')
+    createDomElement(localTotal)
   },
   error: function (thrownError) {
     console.log(thrownError)
@@ -14,8 +14,7 @@ $.ajax({
 })
 
 
-function createDomElement(localTotal,elName) {
-  console.log(elName)
+function createDomElement(localTotal) {
   const domElements = localTotal
   .map((item) => {
     let i=item.recycle;  
@@ -60,8 +59,7 @@ function createDomElement(localTotal,elName) {
     })
     .join('')
 
-  const Quantity = document.querySelector(`.${elName}`)
-  console.log(Quantity)
+  const Quantity = document.querySelector('.local_operator')
   Quantity.innerHTML = domElements
 
 }

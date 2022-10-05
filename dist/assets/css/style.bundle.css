@@ -3205,6 +3205,7 @@ textarea.form-control {
   font-size: 1rem;
   line-height: 1.5;
   border-radius: 0.42rem;
+  font-size: 1.1rem;
   -webkit-transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out, border-color 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
   transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out, border-color 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
   transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out, border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
@@ -51859,11 +51860,11 @@ a.text-hover-muted:hover .svg-icon svg:hover g [fill],
 }
 
 .font-size-h2 {
-  font-size: 1.75rem !important;
+  font-size: 1.5rem !important;
 }
 
 .font-size-h3 {
-  font-size: 1.5rem !important;
+  font-size: 1.4rem !important;
 }
 
 .font-size-h4 {
@@ -53272,7 +53273,7 @@ button {
   -webkit-box-flex: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
-  font-size: 1rem;
+  font-size: 0.9rem;
   color: #7E8299;
   font-weight: 400;
   -webkit-transition: color 0.15s ease, background-color 0.15s ease, border-color 0.15s ease, -webkit-box-shadow 0.15s ease;
@@ -67972,13 +67973,13 @@ code {
   height: 20px;
   width: 20px;
   border-radius: 50%;
-  font-size: 0.8rem;
+  font-size: 1rem;
   background-color: #EBEDF3;
   color: #3F4254;
   font-weight: 400;
-  height: 20px;
-  width: 20px;
-  font-size: 0.8rem;
+  height: 25px;
+  width: 25px;
+
 }
 .label.label-primary {
   color: #FFFFFF;
@@ -68126,7 +68127,7 @@ code {
 }
 .label.label-inline {
   width: auto;
-  padding: 0.15rem 0.75rem;
+  padding: 1rem 0.75rem;
   border-radius: 0.42rem;
 }
 .label.label-inline.label-md {
@@ -83159,7 +83160,7 @@ body {
   height: 100%;
   margin: 0px;
   padding: 0px;
-  font-size: 13px !important;
+  /* font-size: 13px !important; */
   font-weight: 400;
   font-family: Poppins, Helvetica, "sans-serif";
   -ms-text-size-adjust: 100%;

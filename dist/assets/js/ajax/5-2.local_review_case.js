@@ -27,7 +27,7 @@ $.ajax({
         let k = Number(a) + Number(b) + Number(c) + Number(d) + Number(e) + Number(f) + Number(g) + Number(h); 
         return `
         <!--begin::Header-->
-        <div class="card-header border-0 pt-6">
+        <div class="card-header border-0 pt-6 pr-0">
             <h3 class="card-title align-items-start flex-column">
                 <span class="card-label font-weight-bolder font-size-h2 text-dark-75">
                     <a href="#" class="btn btn-light-success font-weight-bold mr-2 disabled"
@@ -39,7 +39,7 @@ $.ajax({
         </div>
         <!--end::Header-->
         <!--begin::Body-->
-        <div class="card-body pt-6">
+        <div class="card-body pt-6 pr-0">
             <!--begin::Nav-->
             <ul class="nav nav-pills nav-fill flex-nowrap justify-content-between">
                 <!--begin::Nav Item-->
