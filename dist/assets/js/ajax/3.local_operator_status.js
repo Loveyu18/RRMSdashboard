@@ -1,12 +1,11 @@
+
 $.ajax({
   type: 'GET',
   url: '../datasample/3-1.local_operator_status.json',
   dataType: 'json',
   async: false ,
-  success: function (response) {
-    const localTotal= []
-    localTotal.push(...response.localRegistry)
-    createDomElement(localTotal)
+  success: function (response) {   
+    createDomElement(response.localRegistry)
   },
   error: function (thrownError) {
     console.log(thrownError)
@@ -15,7 +14,7 @@ $.ajax({
 
 
 function createDomElement(localTotal) {
-  const domElements = localTotal
+  let domElements = localTotal
   .map((item) => {
     let i=item.recycle;  
     let j=item.dealwith;  
