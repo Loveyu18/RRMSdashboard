@@ -64914,7 +64914,7 @@ code {
 
 .table thead th, .table thead td {
   font-weight: 600;
-  font-size: 1rem;
+  font-size: 1.08rem;
   border-bottom-width: 1px;
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -67973,7 +67973,7 @@ code {
   height: 20px;
   width: 20px;
   border-radius: 50%;
-  font-size: 1rem;
+  font-size: 1rem !important;
   background-color: #EBEDF3;
   color: #3F4254;
   font-weight: 400;
