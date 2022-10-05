@@ -1,4 +1,3 @@
-
 $.ajax({
   type: 'GET',
   url: '../datasample/3-1.local_operator_status.json',

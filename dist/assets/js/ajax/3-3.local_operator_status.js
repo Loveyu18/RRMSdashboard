@@ -1,5 +1,3 @@
-
-
 // begin::subsidyChart1 Scripts
 var subsidyChartOptions1 = {
     series: [],

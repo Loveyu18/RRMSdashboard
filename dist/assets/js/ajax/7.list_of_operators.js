@@ -1,20 +1,18 @@
 $.ajax({
-    type: 'GET',
-    url: '../datasample/7.list_of_operators.json',
-    dataType: 'json',
-    async: false ,
-    success: function (response) {
-      const operators= []
-      operators.push(...response.data)
-      createDomElement(operators)
-    },
-    error: function (thrownError) {
-      console.log(thrownError)
-    },
+	type: 'GET',
+	url: '../datasample/7.list_of_operators.json',
+	dataType: 'json',
+	async: false ,
+	success: function (response) {   
+	  createDomElement(response.data)
+	},
+	error: function (thrownError) {
+	  console.log(thrownError)
+	},
   })
 
   function createDomElement(operators) {
-    const domElements = operators
+    let domElements = operators
     .map((item, index) => {
         return `
       

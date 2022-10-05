@@ -1,20 +1,18 @@
 $.ajax({
-    type: 'GET',
-    url: '../datasample/5.local_review_case.json',
-    dataType: 'json',
-    async: false ,
-    success: function (response) {
-      const operators= []
-      operators.push(...response.localUntrial)
-      createDomElement(operators)
-    },
-    error: function (thrownError) {
-      console.log(thrownError)
-    },
+	type: 'GET',
+	url: '../datasample/5.local_review_case.json',
+	dataType: 'json',
+	async: false ,
+	success: function (response) {   
+	  createDomElement(response.localUntrial)
+	},
+	error: function (thrownError) {
+	  console.log(thrownError)
+	},
   })
 
   function createDomElement(operators) {
-    const domElements = operators
+    let domElements = operators
     .map((item) => {
         let a=item.recycleOverdue;  
         let b=item.recycleOverdue7;  

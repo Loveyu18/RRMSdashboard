@@ -1,17 +1,17 @@
 $.ajax({
-    type: 'GET',
-    url: '../datasample/8.exception_notification.json',
-    dataType: 'json',
-    async: false ,
-    success: function (response) {
-      const exception= []
-      exception.push(...response.data)
-      createDomElement(exception)
-    },
-    error: function (thrownError) {
-      console.log(thrownError)
-    },
+	type: 'GET',
+	url: '../datasample/8.exception_notification.json',
+	dataType: 'json',
+	async: false ,
+	success: function (response) {   
+	  createDomElement(response.data)
+	},
+	error: function (thrownError) {
+	  console.log(thrownError)
+	},
   })
+
+
 
   function createDomElement(exception) {
     const domElements = exception

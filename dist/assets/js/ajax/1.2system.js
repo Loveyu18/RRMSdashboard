@@ -1,4 +1,3 @@
-
 $.ajax({
   type: 'GET',
   url: '../datasample/1.system_bulletin.json',
@@ -34,7 +33,7 @@ function createDomElement(charge, elementName, limit=0) {
   if(limit>0){
     charge = charge.filter((item,index) => index < limit)
   }
-  const domElements = charge
+  let domElements = charge
   .map((item, index) => {
    
     return `
@@ -63,11 +62,11 @@ function createDomElement(charge, elementName, limit=0) {
 
 
   $(function(){
-    var len = 30; 
+    let len = 30; 
     $(".text-left").each(function(i){
         if($(this).text().length>len){
             $(this).attr("title",$(this).text());
-            var text=$(this).text().substring(0,len-1)+"...more";
+            let text=$(this).text().substring(0,len-1)+"...more";
             $(this).text(text);
         }
     });

@@ -3,10 +3,8 @@ $.ajax({
     url: '../datasample/6.subsidized_review_case.json',
     dataType: 'json',
     async: false ,
-    success: function (response) {
-      const operators= []
-      operators.push(...response.subsidizedPending)
-      createDomElement(operators)
+    success: function (response) {   
+      createDomElement(response.subsidizedPending)
     },
     error: function (thrownError) {
       console.log(thrownError)
@@ -14,7 +12,7 @@ $.ajax({
   })
 
   function createDomElement(operators) {
-    const domElements = operators
+    let domElements = operators
     .map((item) => {
         let a=item.recycleNew;  
         let b=item.recycleChange;  
