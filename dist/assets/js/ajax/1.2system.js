@@ -46,7 +46,7 @@ function createDomElement(charge, elementName, limit=0) {
           </td>
           <td class="text-left">${item.content}</td>
           <td>
-            <span class="label label-inline label-light-primary font-weight-bold author">${
+            <span class="label label-lg label-inline label-light-primary font-weight-bold author">${
       item.author
     }</span>
           </td>
