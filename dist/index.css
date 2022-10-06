@@ -2,8 +2,14 @@ html,body{
     font-size: 16.5px !important;
 }
 .card-header{
-    padding: 2rem 1rem  !important;
+    padding: 2rem 0.6rem  !important;
 }
+@media (max-width:992px) {
+    .card-header{
+        padding: 2rem 2.25rem !important;
+    }
+
+  }
 @media (max-width:496px) {
     .label.label-inline.label-lg{
         padding: 2rem 0.75rem !important;
