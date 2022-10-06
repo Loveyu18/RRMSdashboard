@@ -2,6 +2,7 @@
 var subsidyChartOptions1 = {
     series: [],
     chart: {
+      height: 350,
       type: "bar",
     },
     grid: {
@@ -34,6 +35,7 @@ var subsidyChartOptions1 = {
       style: {
         colors: ["#fff"],
         fontSize: "16px",
+
       },
       formatter: function (val, opt) {
         return opt.w.globals.labels[opt.dataPointIndex] + " " + val;

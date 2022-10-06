@@ -59,7 +59,7 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 body {
   margin: 0;
   font-family: Poppins, Helvetica, "sans-serif";
-  font-size: 1.03125rem;
+  font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
   color: #3F4254;
@@ -3202,7 +3202,7 @@ textarea.form-control {
   background-color: transparent;
   border: 1px solid transparent;
   padding: 0.65rem 1rem;
-  font-size:  1.03125rem;
+  font-size: 1rem;
   line-height: 1.5;
   border-radius: 0.42rem;
   -webkit-transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out, border-color 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
@@ -5576,7 +5576,7 @@ input[type=button].btn-block {
 }
 
 .card-header {
-  padding-left: 1rem;
+  padding: 2rem 2.25rem;
   margin-bottom: 0;
   background-color: #ffffff;
   border-bottom: 1px solid #EBEDF3;
@@ -51863,7 +51863,7 @@ a.text-hover-muted:hover .svg-icon svg:hover g [fill],
 }
 
 .font-size-h3 {
-  font-size: 1.4rem !important;
+  font-size: 1.5rem !important;
 }
 
 .font-size-h4 {
@@ -52898,7 +52898,7 @@ i {
   justify-content: flex-end;
 }
 .card.card-custom > .card-body {
-  padding: 2rem 1rem;
+  padding: 2rem 2.25rem;
 }
 .card.card-custom > .card-footer {
   background-color: transparent;
@@ -53272,7 +53272,7 @@ button {
   -webkit-box-flex: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
-  font-size: 1.03125rem;
+  font-size: 1rem;
   color: #7E8299;
   font-weight: 400;
   -webkit-transition: color 0.15s ease, background-color 0.15s ease, border-color 0.15s ease, -webkit-box-shadow 0.15s ease;
@@ -64913,7 +64913,7 @@ code {
 
 .table thead th, .table thead td {
   font-weight: 600;
-  font-size: 1.08rem;
+  font-size: 1rem;
   border-bottom-width: 1px;
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -67972,13 +67972,13 @@ code {
   height: 20px;
   width: 20px;
   border-radius: 50%;
-  font-size:1.03125rem;
+  font-size: 0.8rem;
   background-color: #EBEDF3;
   color: #3F4254;
   font-weight: 400;
-  height: 25px;
-  width: 25px;
-
+  height: 20px;
+  width: 20px;
+  font-size: 0.8rem;
 }
 .label.label-primary {
   color: #FFFFFF;
@@ -68126,7 +68126,7 @@ code {
 }
 .label.label-inline {
   width: auto;
-  padding: 1rem 0.75rem;
+  padding: 0.15rem 0.75rem;
   border-radius: 0.42rem;
 }
 .label.label-inline.label-md {
@@ -68179,7 +68179,7 @@ code {
   width: 4px;
 }
 .label.label-lg {
-  height: 40px;
+  height: 24px;
   width: 24px;
   font-size: 0.9rem;
 }
@@ -83159,7 +83159,7 @@ body {
   height: 100%;
   margin: 0px;
   padding: 0px;
-  /* font-size: 13px !important; */
+  font-size: 13px ;
   font-weight: 400;
   font-family: Poppins, Helvetica, "sans-serif";
   -ms-text-size-adjust: 100%;
