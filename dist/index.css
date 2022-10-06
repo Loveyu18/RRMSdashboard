@@ -1,39 +1,12 @@
-body,.table-col{
-    font-size: 1.26923rem !important;
+html,body{
+    font-size: 16.5px !important;
 }
-.btn.btn-primary,.btn.btn-outline-success,.btn.btn-outline-danger{
-    font-size: 1.26923rem !important;
+.card-header{
+    padding: 2rem 1rem  !important;
 }
-.btn{
-    font-size: 1.1rem !important;
-}
-.nav-text{
-    font-size: 1.26923rem !important;
-}
-.label{
-    font-size: 1.14231rem !important;
-
-}
-.font-size-lg{
-    font-size: 1.37077rem !important;
-}
-.label.label-inline.label-lg{
-    padding: 1.3rem 0.75rem !important;
-}
-.label.label-inline{
-    padding: 1.3rem 0.75rem !important;
-}
-.system_bulletin,.message_announcement{
-    font-size: 1.14231rem !important;
-}
-
-@media (max-width:576px) {
+@media (max-width:496px) {
     .label.label-inline.label-lg{
-        padding: 2.2rem 0.75rem !important;
+        padding: 2rem 0.75rem !important;
     }
-}
-@media (max-width:414px) {
-    .label.label-inline.label-lg{
-        padding: 3rem 0.75rem !important;
-    }
-}
+
+  }
