@@ -389,36 +389,49 @@ License: You must have a valid license purchased only from themes.getbootstrap.c
 								class="card-label font-weight-bolder font-size-h2 text-dark-75">地方登記與受補貼資料不一致業者名單</span>
 							<span class="text-muted mt-3 font-weight-bold font-size-lg list_of_operators_count"></span>
 						</h3>
-
+		
 					</div>
 					<!--end::Header-->
 					<!--begin::Body-->
 					<div class="card-body p-6 ml-6 list_of_operators">
-
+						<div class="table-responsive">
+							<table class="table  table-borderless table-vertical-center">
+								<thead>
+									<tr>
+										<th class="symbol symbol-45 symbol-light mr-2"></th>
+										<th class="text-dark-75 font-weight-bolder text-hover-primary mb-1 font-size-lg"></th>
+										<th class="text-muted font-weight-bolder d-block font-size-lg"></th>
+										<th class="text-muted font-weight-500"></th>
+										<th class="label label-lg label-light-success label-inline"></th>
+										<th class="label label-lg label-light-success label-inline"></th>
+									</tr>
+								</thead>
+								<tbody class="page-data">
+		
+								</tbody>
+		   
+							</table>
+						</div>   
 					</div>
 					<!--end::Body-->
 					<!--begin::Pagination-->
-					<div class="d-flex align-items-end justify-content-center mb-5 pagination">
-						<div class="d-flex flex-wrp py-2 mr-3">
-							<a href="#" class="btn btn-icon btn-sm btn-light-success mr-2 my-1"><i
-									class="ki ki-bold-double-arrow-back icon-xs"></i></a>
-							<a href="#" class="btn btn-icon btn-sm btn-light-success mr-2 my-1"><i
-									class="ki ki-bold-arrow-back icon-xs"></i></a>
-							<a href="#"
-								class="btn btn-icon btn-circle btn-sm border-0 btn-hover-success mr-2 my-1 active">1</a>
-							<a href="#" class="btn btn-icon btn-sm border-0 btn-hover-success  mr-2 my-1">2</a>
-							<a href="#" class="btn btn-icon btn-sm border-0 btn-hover-success mr-2 my-1">3</a>
-							<a href="#" class="btn btn-icon btn-sm border-0 btn-hover-success mr-2 my-1">...</a>
-
-							<a href="#" class="btn btn-icon btn-sm btn-light-success mr-2 my-1"><i
-									class="ki ki-bold-arrow-next icon-xs"></i></a>
-							<a href="#" class="btn btn-icon btn-sm btn-light-success mr-2 my-1"><i
-									class="ki ki-bold-double-arrow-next icon-xs"></i></a>
-						</div>
-					</div>
-					<!--end::Pagination-->
-
-				</div>
+					<nav aria-label="Page navigation example">
+						<ul class="pagination">
+							<li onclick="prePage()" class="page-item page-list btn btn-icon btn-sm btn-light-success mr-2 my-1">
+								<a class="page-link" href="#" aria-label="Previous">
+									<span aria-hidden="true">&laquo;</span>
+									<span class="sr-only">Previous</span>
+								</a>
+							</li>
+				
+							<li onclick="nextPage()" class="page-item btn btn-icon btn-sm btn-light-success mr-2 my-1">
+								<a class="page-link" href="#" aria-label="Next">
+									<span aria-hidden="true">&raquo;</span>
+									<span class="sr-only">Next</span>
+								</a>
+							</li>
+						</ul>
+					</nav>
 				<!--end::Tables Widget 1-->
 			</div>
 			<div class="col-lg-4">
