@@ -411,7 +411,7 @@ License: You must have a valid license purchased only from themes.getbootstrap.c
 								</tbody>
 							</table>
 						</div>	
-								<tbody class="page-data">
+								<tbody class="page-data" id="page-content">
 		
 								</tbody>
 		   
@@ -419,18 +419,31 @@ License: You must have a valid license purchased only from themes.getbootstrap.c
 						 
 					</div>
 					<!--end::Body-->
-					<!--begin::Pagination-->
-					<nav aria-label="Page navigation example" class="d-flex align-items-end justify-content-center mb-5 pagination ">
-						<ul class="pagination d-flex flex-wrp py-2 mr-3">
-							<li onclick="prePage()" class="page-item page-list btn btn-icon btn-sm btn-light-success mr-2 my-1">
-								<a class="page-link btn btn-icon btn-sm btn-light-success mr-2 my-1" href="#Page" aria-label="Previous">
-									<i class="ki ki-bold-arrow-back icon-xs"></i>
+					<!--begin::Pagination-->				
+					<nav aria-label="Page navigation example " class="d-flex align-items-end justify-content-center mb-5 pagination ">
+						<ul class="pagination d-flex flex-wrp py-2 mr-3 ">		
+							<div class="page-list d-flex">
+								<li onclick="firstPage()" class="page-item">								
+									<a class="page-link btn btn-icon btn-sm btn-light-success mr-2 my-1" href="#Page" aria-label="Previous">
+										<i class="ki ki-bold-double-arrow-back icon-xs"></i>
+									</a>
+								</li>					
+								<li onclick="prePage()" class="page-item">								
+									<a class="page-link btn btn-icon btn-sm btn-light-success mr-2 my-1" href="#Page" aria-label="Previous">
+										<i class="ki ki-bold-arrow-back icon-xs"></i>
+									</a>
+								</li>
+							</div>
+							<li onclick="nextPage()" class="page-item">
+								<a href="#Page" aria-label="Next" class="page-link btn btn-icon btn-sm btn-light-success mr-2 my-1">
+									<i class="ki ki-bold-arrow-next icon-xs"></i>
 								</a>
+								
 							</li>
-				
-							<li onclick="nextPage()" class="page-item btn btn-icon btn-sm btn-light-success mr-2 my-1">
-								<a href="#Page" aria-label="Next" class="page-link btn btn-icon btn-sm btn-light-success mr-2 my-1"><i
-									class="ki ki-bold-arrow-next icon-xs"></i></a>
+							<li onclick="endPage()" class="page-item">
+								<a href="#Page" aria-label="Next" class="page-link btn btn-icon btn-sm btn-light-success mr-2 my-1">
+									<i class="ki ki-bold-double-arrow-next icon-xs"></i>
+								</a>
 								
 							</li>
 						</ul>
@@ -460,6 +473,8 @@ License: You must have a valid license purchased only from themes.getbootstrap.c
 			
 		</div>
 		<!--end::Dashboard-->
+
+		
 	</div>
 
 
@@ -486,6 +501,8 @@ License: You must have a valid license purchased only from themes.getbootstrap.c
 	<!--end::Page Scripts-->
 	<!--begin::Page Scripts(used by this page)-->
 	<script src="assets/js/pages/my-script.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/twbs-pagination/1.4.1/jquery.twbsPagination.min.js"></script>
+
 	<!--end::Page Scripts-->
 	<script src="assets/js/ajax/1.2system.js"></script>
 	<script src="assets/js/ajax/3.local_operator_status.js"></script>

@@ -61,3 +61,6 @@ function createDomElement(localTotal) {
   Quantity.innerHTML = domElements
 
 }
+
+
+

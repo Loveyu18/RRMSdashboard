@@ -1,7 +1,7 @@
 
   let userData = null;
   let pages = "";
-  let page_size = 4;
+  let page_size = 5;
   var currentPage = 0;
   $.ajax({
 	  url: "../datasample/7.list_of_operators.json",
@@ -22,7 +22,12 @@
 	  }
   });
   
-  
+
+  function firstPage() {
+	if (currentPage < pages.length && currentPage != 0)
+	page = Math.max(page, 1);
+	
+}
 
   function nextPage() {
 	  if (pages.length - 1 > currentPage)
@@ -36,7 +41,13 @@
 	  pageChange(page);
   }
 
+  function endPage() {
+	if (currentPage < pages.length && currentPage != 0)
+	page = Math.min(page, 1);
+	
+}
   function pageChange(page) {
+	
 	  currentPage = page;
 	  $(".page-item-link").removeClass("active");
 	  $("#page_" + page).addClass("active");
@@ -44,6 +55,8 @@
 	  page = pages[page];
 	  printRows(page);
   }
+
+
 
   function  printRows(operators) {
     let domElements = operators
