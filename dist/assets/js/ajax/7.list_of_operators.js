@@ -3,6 +3,7 @@
   let pages = "";
   let page_size = 5;
   var currentPage = 0;
+
   $.ajax({
 	  url: "../datasample/7.list_of_operators.json",
 	  type: "get",
@@ -11,7 +12,6 @@
 		  userData = users.data;
 		  pages = paginate(userData, page_size);
 		  pageLi = "";
-		 
 		  pages.forEach((element, index) => {
 			  
 				    pageLi += '<a href="javascript:pageChange(' + index + ',\'.list_ofoperators_pages>div\')" id="page_' + index + '" class="page-item-link btn btn-icon btn-circle btn-sm border-0 btn-hover-success mr-2 my-1 '+(currentPage===index?'active':'')+' " id="page_' + index + '"> ' + (index+1) + ' </a>';
@@ -19,14 +19,23 @@
 		  $(".page-list").after(pageLi);
 		  page = pages[currentPage];
 		  printRows(page);
+		  
 	  }
+	  
   });
   
 
+
+  
   function firstPage() {
 	if (currentPage < pages.length && currentPage != 0)
-	page = Math.max(page, 1);
-	
+		 pageChange(0);
+}
+
+function prePage() {
+	if (currentPage < pages.length && currentPage != 0)
+		page = currentPage - 1;
+	pageChange(page);
 }
 
   function nextPage() {
@@ -35,17 +44,13 @@
 	  pageChange(page);
   }
 
-  function prePage() {
-	  if (currentPage < pages.length && currentPage != 0)
-		  page = currentPage - 1;
-	  pageChange(page);
-  }
+ 
+//   function endPage() {
+// 	if (pages.length - 1 > currentPage)
+// 	pageChange(Math.ceil(data / 5));
+// }
 
-  function endPage() {
-	if (currentPage < pages.length && currentPage != 0)
-	page = Math.min(page, 1);
-	
-}
+
   function pageChange(page) {
 	
 	  currentPage = page;
@@ -101,5 +106,4 @@
 		  return acc
 	  }, [])
   }
-
 
