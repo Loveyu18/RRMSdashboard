@@ -19,7 +19,7 @@
 		  $(".page-list").after(pageLi);
 		  page = pages[currentPage];
 		  printRows(page);
-		  
+		
 	  }
 	  
   });
@@ -34,8 +34,10 @@
 
 function prePage() {
 	if (currentPage < pages.length && currentPage != 0)
+	
 		page = currentPage - 1;
 	pageChange(page);
+	
 }
 
   function nextPage() {
@@ -45,10 +47,10 @@ function prePage() {
   }
 
  
-//   function endPage() {
-// 	if (pages.length - 1 > currentPage)
-// 	pageChange(Math.ceil(data / 5));
-// }
+  function endPage() {
+	if (pages.length - 1 > currentPage)
+	pageChange("#page_".length);
+}
 
 
   function pageChange(page) {
@@ -107,3 +109,6 @@ function prePage() {
 	  }, [])
   }
 
+
+  
+ 

@@ -422,18 +422,19 @@ License: You must have a valid license purchased only from themes.getbootstrap.c
 					<!--begin::Pagination-->				
 					<nav aria-label="Page navigation example " class="d-flex align-items-end justify-content-center mb-5 pagination ">
 						<ul class="pagination d-flex flex-wrp py-2 mr-3 ">		
-							<div class="page-list d-flex">
+							
 								<li onclick="firstPage()" class="page-item">								
-									<a class="page-link btn btn-icon btn-sm btn-light-success mr-2 my-1" href="#Page" aria-label="Previous">
+									<a class="page-link btn btn-icon btn-sm btn-light-success mr-2 my-1" href="#Page">
 										<i class="ki ki-bold-double-arrow-back icon-xs"></i>
 									</a>
 								</li>					
 								<li onclick="prePage()" class="page-item">								
-									<a class="page-link btn btn-icon btn-sm btn-light-success mr-2 my-1" href="#Page" aria-label="Previous">
+									<a class="page-link btn btn-icon btn-sm btn-light-success mr-2 my-1" href="#Page">
 										<i class="ki ki-bold-arrow-back icon-xs"></i>
 									</a>
 								</li>
-							</div>
+								<li class="page-list"></li>
+							
 							<li onclick="nextPage()" class="page-item">
 								<a href="#Page" aria-label="Next" class="page-link btn btn-icon btn-sm btn-light-success mr-2 my-1">
 									<i class="ki ki-bold-arrow-next icon-xs"></i>
