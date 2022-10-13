@@ -37,12 +37,9 @@ License: You must have a valid license purchased only from themes.getbootstrap.c
 	<link href="assets/css/themes/layout/header/menu/light.css" rel="stylesheet" type="text/css" />
 	<link href="assets/css/themes/layout/brand/dark.css" rel="stylesheet" type="text/css" />
 	<link href="assets/css/themes/layout/aside/dark.css" rel="stylesheet" type="text/css" />
+	<link href="assets/plugins/custom/datatables/datatables.bundle.css" rel="stylesheet" type="text/css" />
 	<!--end::Layout Themes-->
 	<link rel="shortcut icon" href="assets/media/logos/favicon.ico" />
-	<style>
-
-		
-	</style>
 </head>
 <!--end::Head-->
 <!--begin::Body-->
@@ -394,6 +391,21 @@ License: You must have a valid license purchased only from themes.getbootstrap.c
 					<!--end::Header-->
 					<!--begin::Body-->
 					<div class="card-body p-6 ml-6 ">
+						<div id="kt_datatable">
+						
+							<table class="datatable datatable-bordered datatable-head-custom" id="ktdatatable">
+								
+								
+							</table>
+						
+						</div> 
+
+		   
+							
+						 
+					</div>
+					
+					<!-- <div class="card-body p-6 ml-6 ">
 						<div class="table-responsive">
 							<table class="table  table-borderless table-vertical-center">
 								<thead>
@@ -417,38 +429,38 @@ License: You must have a valid license purchased only from themes.getbootstrap.c
 		   
 							
 						 
-					</div>
+					</div> -->
 					<!--end::Body-->
 					<!--begin::Pagination-->				
-					<nav aria-label="Page navigation example " class="d-flex align-items-end justify-content-center mb-5 pagination ">
-						<ul class="pagination d-flex flex-wrp py-2 mr-3 ">		
+					<!-- <nav aria-label="Page navigation example " class="d-flex align-items-end justify-content-center mb-5 pagination " >
+						<ul class="pagination d-flex flex-wrp py-2 mr-3 cdp" actpage="1">		
 							
-								<li onclick="firstPage()" class="page-item">								
+								<li onclick="firstPage()" class="page-item cdp_i">								
 									<a class="page-link btn btn-icon btn-sm btn-light-success mr-2 my-1" href="#Page">
 										<i class="ki ki-bold-double-arrow-back icon-xs"></i>
 									</a>
 								</li>					
-								<li onclick="prePage()" class="page-item">								
+								<li onclick="prePage()" class="page-item cdp_i">								
 									<a class="page-link btn btn-icon btn-sm btn-light-success mr-2 my-1" href="#Page">
 										<i class="ki ki-bold-arrow-back icon-xs"></i>
 									</a>
 								</li>
 								<li class="page-list"></li>
 							
-							<li onclick="nextPage()" class="page-item">
+							<li onclick="nextPage()" class="page-item cdp_i">
 								<a href="#Page" aria-label="Next" class="page-link btn btn-icon btn-sm btn-light-success mr-2 my-1">
 									<i class="ki ki-bold-arrow-next icon-xs"></i>
 								</a>
 								
 							</li>
-							<li onclick="endPage()" class="page-item">
+							<li onclick="endPage()" class="page-item cdp_i">
 								<a href="#Page" aria-label="Next" class="page-link btn btn-icon btn-sm btn-light-success mr-2 my-1">
 									<i class="ki ki-bold-double-arrow-next icon-xs"></i>
 								</a>
 								
 							</li>
 						</ul>
-					</nav>
+					</nav> -->
 				</div>
 				<!--end::Tables Widget 1-->
 			</div>
@@ -516,6 +528,7 @@ License: You must have a valid license purchased only from themes.getbootstrap.c
 	<script src="assets/js/ajax/7.list_of_operators.js"></script>
 	<script src="assets/js/ajax/8.exception_notification.js"></script>
 	
+
 
 
 
